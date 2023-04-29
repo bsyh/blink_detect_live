@@ -30,7 +30,7 @@ The BlinkDetector class subscribes to the pupil diameter topic and processes the
 ### Blink
  - `time onset`: Timestamp of the onset of the blink event.
  - `time offset`: Timestamp of the offset of the blink event.
- - `duration duration`: Duration of the blink event.
+ - `time duration`: Duration of the blink event.
  - `int32 count`: Sequential count of the blink event.
 
 # Citation to use
