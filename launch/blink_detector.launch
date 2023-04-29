@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+	<arg name="concat_gap_interval"  default="1"/>
+	<arg name="samples2smooth"  default="3"/>
+
+	<node name="blink_detect" pkg="blink_detect_live" type="blink_detector.py" output="screen" required="true">
+		<param name="samples2smooth" value="$(arg samples2smooth)"/>
+		<param name="concat_gap_interval" value="$(arg concat_gap_interval)"/>
+		<param name="id" value="$(arg id)"/>
+	</node>
+
+</launch>
