@@ -34,5 +34,5 @@ The BlinkDetector class subscribes to the pupil diameter topic and processes the
  - `int32 count`: Sequential count of the blink event.
 
 # Citation to use
-if you are using this code, please add a citation as described at the bottom of https://git.initrobots.ca/aduval/bio_physics.
+if you are using this code, please add a citation as described at the bottom of https://git.initrobots.ca/aduval/bio_physics#citing.
 
