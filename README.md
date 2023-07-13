@@ -9,9 +9,9 @@ This repository applies dynamic programming. One-pass reads the pupil diameter s
 The blue line represents the pupil diameter stream. Colored blocks denote blinks.
 
 ![result](doc/result.gif)
-Figure 1:Left eye
-Figure 2:Right eye
-Figure 3:Combined eyes for one topic
+Figure 1:Left eye\
+Figure 2:Right eye\
+Figure 3:Combined eyes for one topic\
 The blue line represents the pupil diameter stream. Green blocks denote blinks. And the pupil diameter stream is smoothed.
 
 # Description
