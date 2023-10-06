@@ -6,7 +6,7 @@ The live blink detection is aspired from this paper in which a static algorithm 
 
 
 ![result](doc/Figure_1.png)
-The blue line represents the pupil diameter stream. Colored blocks denote blinks.
+The blue line represents the pupil diameter stream. Colored blocks denote the gap with the absence of data. Those gaps between 70ms and 90ms are considered as blinks.
 
 
 
