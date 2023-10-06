@@ -1,12 +1,14 @@
 # blink_detect_live
 A blink detection algorithm ROS package that takes a live stream of pupil diameter message as input, publishes blink message including onset, offset, duration and count.
 
-The live blink detection is based on this paper in which a static algorithm is proposed to detect the onset and offset of blinks by analyzing the fluctuations in the pupil data that result from measurement error produced by the eye-tracking device. See https://pubmed.ncbi.nlm.nih.gov/29340968/
+The live blink detection is aspired from this paper in which a static algorithm is proposed to detect the onset and offset of blinks by analyzing the fluctuations in the pupil data that result from measurement error produced by the eye-tracking device. See [A novel blink detection method based on pupillometry noise](https://pubmed.ncbi.nlm.nih.gov/29340968/). However, the method can only read a static slice of pupil diameter data. This repository provides a live and efficient O(N) algorithm by dynamic programming and one-pass reading the pupil diameter stream.
 
-This repository applies dynamic programming. One-pass reads the pupil diameter stream.
+
 
 ![result](doc/Figure_1.png)
 The blue line represents the pupil diameter stream. Colored blocks denote blinks.
+
+
 
 ![result](doc/result.gif)
 Figure 1: Left eye\
