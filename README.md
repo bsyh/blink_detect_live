@@ -13,7 +13,7 @@ The blue line represents the pupil diameter stream. Colored blocks denote the ga
 ![result](doc/result.gif)
 Figure 1: Left eye\
 Figure 2: Right eye\
-Figure 3: Combined eyes for one topic\
+Figure 3: Combined eyes for one topic, with smooth filter applied and data interpolated\
 The blue line represents the pupil diameter stream. Green blocks denote blinks. And the pupil diameter stream is smoothed, with the out-lier removed, missing data during blink interpolated by Akima algorithm.
 
 # Description
