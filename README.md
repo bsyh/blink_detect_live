@@ -16,8 +16,11 @@ Figure 2: Right eye pupil diameter\
 Figure 3: Combined eyes for one topic, with smooth filter applied and data interpolated\
 The blue line represents the pupil diameter stream. Green blocks denote blinks. And the pupil diameter stream is smoothed, with the out-lier removed, missing data during blink interpolated by Akima algorithm.
 
-# Description
+# Usage
 The BlinkDetector class subscribes to the pupil diameter topic and processes the data in real time. It maintains a buffer of recent pupil diameter samples and timestamps, which is used to calculate the smoothed diameter. When a blink is detected, the node publishes a Blink message with the onset, offset, and duration of the blink event.
+## Pseudocode
+![Pseudocode](doc/Pseudocode.png)
+
 ## Parameters
  - `concat_gap_interval` (int): The minimum number of samples between two consecutive blink events for them to be considered separate. The default value is 5.
  - `samples2smooth` (int): The number of samples used to smooth the pupil diameter data. It should be an odd number. The default value is 11.
