@@ -16,7 +16,7 @@ Figure 2: Right eye pupil diameter\
 Figure 3: Combined eyes for one topic, with smooth filter applied and data interpolated\
 The blue line represents the pupil diameter stream. Green blocks denote blinks. And the pupil diameter stream is smoothed, with the out-lier removed, missing data during blink interpolated by Akima algorithm.
 ## Pseudocode
-The callback function is launched every time a PupilDiameter msg is received by subscriber. You can modifed Smooth() as you need. Default smooth method is a weighted average. 
+The callback function is launched every time when a PupilDiameter msg is received by subscriber. You can modify Smooth() as need. Default smooth method is weighted average. 
 ![Pseudocode](doc/Pseudocod.png)
 # Usage
 The BlinkDetector class subscribes to the pupil diameter topic and processes the data in real time. It maintains a buffer of recent pupil diameter samples and timestamps, which is used to calculate the smoothed diameter. When a blink is detected, the node publishes a Blink message with the onset, offset, and duration of the blink event.
